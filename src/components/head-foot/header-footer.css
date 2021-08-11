@@ -1,0 +1,99 @@
+/* HEADER COMPONENT CSS */
+
+.header-wrapper {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #43C0F6;
+    color: white;
+}
+
+#logo {
+    height: 100%;
+    margin-left: 10%;
+}
+
+.links-wrap {
+    margin: auto auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+#links-text {
+    margin: auto 10px;
+}
+
+#right-box {
+    margin-right: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#lang-box {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+
+#lang-text {
+    font-size: 10px;
+}
+
+#nz-flag, #maori-flag {
+    width: 24px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+#user-link {
+    height: 50%;
+}
+
+#user-box {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+
+#temp {
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+}
+
+.user-text {
+    font-size: 12px;
+    margin: 0px auto auto 10px;
+}
+
+/* FOOTER COMPONENT CSS */
+
+.footer-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #B2E4FA;
+    color: #707070;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.text-box {
+    width: 10%;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.text-items {
+    list-style-type: none;
+    margin-left: -40px;
+}
+

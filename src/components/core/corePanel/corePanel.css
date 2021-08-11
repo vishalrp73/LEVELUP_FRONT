@@ -1,0 +1,55 @@
+.panel-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+#panel-text {
+    margin: 20px auto;
+    color: #6C6C6C;
+}
+
+#panels {
+    display: flex;
+    flex-direction: row;
+    margin: auto 100px;
+}
+
+.panel-container {
+    width: 315px;
+    height: 220px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+#create {
+    background-image: url('../../../img/child-sitting.png');
+}
+
+#critical {
+    background-image: url('../../../img/jigsaw.png');
+}
+
+#communication {
+    background-image: url('../../../img/kids-playing.png');
+}
+
+#technology {
+    background-image: url('../../../img/annie-pratt.png');
+}
+
+.inner-img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.inner-text {
+    text-align: center;
+}

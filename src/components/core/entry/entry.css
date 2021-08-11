@@ -1,0 +1,41 @@
+.entry-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+#entry-img {
+    max-width: 620px;
+    margin: auto;
+}
+
+.entry-panel {
+    width: 40%;
+    margin: 0px auto auto 0px;
+    color: #6C6C6C;
+}
+
+.btn-wrap {
+    width: 100%;
+}
+
+.entry-btn {
+    margin: 0px 20px;
+    width: 175px;
+    height: 35px;
+    font-weight: bold;
+}
+
+#enq_now {
+    border-radius: 7px;
+    border: 3px solid #43C0F6;
+    color: #707070;
+}
+
+#sign_up {
+    background-color: #F91C85;
+    border-radius: 7px;
+    color: white;
+    border: 0px solid #FFFFFF;
+}

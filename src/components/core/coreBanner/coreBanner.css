@@ -1,0 +1,56 @@
+.banner-wrapper {
+    display: flex;
+    background-image: url('../../../img/hero-img.png');
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+    margin: auto auto auto 100px;
+}
+
+.banner-heading {
+    font-size: 60px;
+    color: grey;
+    margin: auto;
+}
+
+#fut_blue {
+    color: blue;
+}
+
+.banner-text {
+    text-align: justify;
+    color: grey;
+    font-size: 24px;
+    font-family: "nunito";
+    font-weight: 800;
+}
+
+#button-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+}
+
+.buttons {
+    width: 100px;
+    height: 25px;
+}
+
+#sign-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#sign-text {
+    font-size: 10px;
+    width: 100px;
+}

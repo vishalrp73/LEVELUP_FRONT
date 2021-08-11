@@ -1,0 +1,43 @@
+.info-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    text-align: center;
+}
+
+#info-btn-group {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.info-btn {
+    margin: 10px 10%;
+}
+
+.info-btn:active {
+    background-color: orange;
+}
+
+.text-panel {
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #EFEFF1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TEXT PANELS */
+
+.panel-wrap {
+    margin: 50px auto;
+    color: #606060;
+}
+
+.panel-item {
+    list-style-image: url('../../../img/star-small.png');
+}
