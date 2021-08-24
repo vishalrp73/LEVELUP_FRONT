@@ -6,8 +6,8 @@ import Maori_Flag from '../../img/maori-flag.png';
 
 const Header = () => {
     return (
-        <div className = 'header-wrapper'>
-            <img id = 'logo' src = { Logo } />
+        <div className = 'home-header-wrapper'>
+            <img id = 'home-logo' src = { Logo } />
 
             <div className = 'links-wrap'>
                 <h3 id = 'links-text'>HOME</h3>

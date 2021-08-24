@@ -1,0 +1,61 @@
+.prog-head-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 5% auto;
+    color: #707070;
+}
+
+#prog-title-text {
+    margin: auto auto auto 0;
+}
+
+#prog-export-text {
+    margin: auto 0 auto auto;
+}
+
+.prog-track-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 15%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin: 2.5% auto;
+    color: #707070;
+}
+
+.prog-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+#prog-text {
+    text-align: right;
+}
+
+.prog-proj-comp {
+    text-align: center;
+}
+
+.prog-icons {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: auto;
+}
+
+.banks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #A2A0A0;
+    color: #6C6C6C;
+    border-radius: 50px;
+}

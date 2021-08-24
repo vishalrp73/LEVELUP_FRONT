@@ -1,0 +1,118 @@
+.title-bar {
+    width: 90%;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #707070;
+}
+
+#dl_files-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto 10px auto auto;
+}
+
+#mark-box {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0px auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#mark-comp-link {
+    margin-left: 20px;
+}
+
+#mark-comp-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.stud-sub-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #707070;
+}
+
+.stud-sub-panel {
+    width: 95%;
+    margin: 2.5% auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-wrapper {
+    width: 90%;
+    background-color: #FFFFFF;
+    color: #707070;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    margin: auto;
+}
+
+#stud-sub-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+input {
+    margin-top: 25px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.stud-sub-box {
+    display: flex;
+    flex-direction: row;
+    margin: 0% 5%;
+}
+
+#sub-img {
+    margin: 10px;
+}
+
+#stud-sub-timestamp {
+    width: 10%;
+    margin: auto 5% auto auto;
+}
+
+#modal-wrapper {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+#cross {
+    background-color: red;
+}
+
+.modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto;
+    width: 50%;
+    height: 50%
+}
+
+.modal-img {
+    width: 150%;
+    height: 150%;
+}
+
+.close {
+    margin: 20px 20px auto auto;
+    font-size: 40px;
+    transition: 0.3s;
+}

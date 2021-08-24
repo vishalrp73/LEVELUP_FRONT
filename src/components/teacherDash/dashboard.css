@@ -1,0 +1,179 @@
+/* DASHBOARD CSS */
+
+.dashboard-wrapper {
+    background-color: #B2E4FA;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+/* DRAWER CSS */
+
+.drawer-wrapper {
+    height: 90vh;
+    background-color: #43C0F6;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.drawer-open {
+    width: 15%;
+}
+
+.drawer-close {
+    width: 7%;
+    overflow-x: hidden;
+}
+
+#teacher-photo-wrap {
+    margin: 10% auto;    
+}
+
+#teacher-photo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;    
+}
+
+.nav-link {
+    width: 100%;
+    text-decoration: none;
+    margin: 2.5% auto;
+}
+
+.nav-link-active {
+    background-color: #B2E4FA;
+    border-radius: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-buttons:hover {
+    background-color: #B2E4FA;
+    border-radius: 10px;
+}
+
+.nav-icons {
+    width: 20%;
+    height: 75%;
+    margin: auto 10%;
+}
+
+.nav-text {
+    width: 80%;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.icons-large {
+    width: 75%;
+    height: 50%;
+    margin: 10% auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#left-button, #right-button {
+    background-color: #B2E4FA;
+    width: 65px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-button {
+    border-radius: 10px 0px 0px 10px;
+    margin: 10% 0px auto auto;
+}
+
+#right-button {
+    border-radius: 0px 10px 10px 0px;
+    margin: auto auto 0px 0px;
+}
+
+#caret-left, #caret-right {
+    width: 50%;
+    height: 50%;
+}
+
+.bottom-nav {
+    width: 80%;
+    margin: auto auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-img {
+    margin: 10px auto;
+}
+
+.bottom-links {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.bottom-text {
+    text-align: center;
+    font-size: 10px;
+}
+
+.bottom-flex {
+    flex-direction: column;
+}
+
+/* DASH */
+
+.dash-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #B2E4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inlay {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-radius: 30px;
+    background: rgb(255, 255, 255, 0.5);
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #43C0F6;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    margin: 10px 0px;
+}

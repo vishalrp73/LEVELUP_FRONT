@@ -1,0 +1,49 @@
+.stud-req-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 10%;
+    margin: 5% auto;
+    color: #707070;
+}
+
+#mark-comp-link {
+    float: right;
+}
+
+#mark-comp-link:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.requests-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+#req-stud-photo {
+    width: 5%;
+    height: 75%;
+    border-radius: 50px;
+    margin: auto 5%;
+}
+
+#req-stud-text {
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#req-timestamp {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto 5% auto auto;
+    justify-content: center;
+}
