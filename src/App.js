@@ -2,6 +2,7 @@ import './App.css';
 import Home from './pages/home';
 import TeacherDashboard from './pages/teacherDash';
 import { useState } from 'react';
+import ProjectLibrary from './pages/projLibrary';
 
 function App() {
 
@@ -12,9 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      {
-        home ? <Home /> : <TeacherDashboard />
-      }
+      <ProjectLibrary />
     </div>
   );
 }

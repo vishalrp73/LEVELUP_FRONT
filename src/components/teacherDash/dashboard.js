@@ -8,7 +8,7 @@ import ProgressTracker from '../../pages/teacherDashPages/progTrack';
 import StudentProfiles from '../../pages/teacherDashPages/studProf';
 import StudentRequests from '../../pages/teacherDashPages/studReq';
 import StudentSubmissions from '../../pages/teacherDashPages/studSub';
-import Home from '../../pages/home';
+import ProjectLibrary from '../../pages/projLibrary';
 
 import teach_img from '../../img/teachDash/teacher_photo.png';
 import pt_icon from '../../img/teachDash/pt_icon.png';
@@ -106,7 +106,7 @@ const Dashboard = () => {
                             </div>
                         </NavLink>
 
-                        <NavLink to = '/home.js' className = 'nav-link' activeClassName = 'nav-link-active' >
+                        <NavLink to = '/projLibrary.js' className = 'nav-link' activeClassName = 'nav-link-active' >
                             <div className = 'nav-buttons'>
                                 <img className = {clsx('nav-icons', {
                                                 ['icons-large']: !large,
@@ -197,8 +197,8 @@ const Dashboard = () => {
                                         <StudentSubmissions />
                                     </Route>
 
-                                    <Route exact path = '/home.js'>
-                                        <Home />
+                                    <Route exact path = '/projLibrary.js'>
+                                        <ProjectLibrary />
                                     </Route>
 
 

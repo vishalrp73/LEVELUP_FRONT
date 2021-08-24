@@ -1,0 +1,15 @@
+.item-wrapper {
+    width: 400px;
+    height: 300px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proj-img {
+    width: 50%;
+}
