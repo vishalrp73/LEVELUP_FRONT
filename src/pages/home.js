@@ -6,6 +6,8 @@ import CorePanel from '../components/core/corePanel/corePanel';
 import InfoSelect from '../components/core/infoSelect/infoSelect';
 import Entry from '../components/core/entry/entry';
 
+
+
 const Home = () => {
     return(
         <>

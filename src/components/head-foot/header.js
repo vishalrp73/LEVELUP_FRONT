@@ -4,7 +4,31 @@ import Logo from '../../img/logo.png';
 import NZ_Flag from '../../img/nz-flag.png';
 import Maori_Flag from '../../img/maori-flag.png';
 
+import Modal from '@material-ui/core/Modal';
+import LogSign from '../logSign/logSign';
+import { useState } from 'react';
+
+
 const Header = () => {
+
+    const [open, setOpen] = useState(false);
+    const [log, setLog] = useState(false);
+
+    const handleClick = (id) => {
+        console.log(id)
+        if (open == true) {
+            setOpen(false)
+        } else if (open == false) {
+            setOpen(true)
+        }
+
+        if (id == 'register') {
+            setLog(false)
+        } else if (id = 'login') {
+            setLog(true)
+        }
+    }
+
     return (
         <div className = 'home-header-wrapper'>
             <img id = 'home-logo' src = { Logo } />
@@ -26,10 +50,14 @@ const Header = () => {
                 <a id = 'user-link' >
                     <div id = 'user-box'>
                         <div id = 'temp' />
-                        <p className = 'user-text'>REGISTER | </p>
-                        <p className = 'user-text'>LOGIN</p>
+                        <p id = 'register' className = 'user-text' onClick = {(event) => handleClick(event.target.id)}>REGISTER | </p>
+                        <p id = 'login' className = 'user-text' onClick = {(event) => handleClick(event.target.id)}>LOGIN</p>
                     </div>
                 </a>
+
+                <Modal className = 'mui-modal' open = {open} onClose = {() => handleClick() } >
+                    <LogSign log = {log} />
+                </Modal>
 
             </div>
         </div>

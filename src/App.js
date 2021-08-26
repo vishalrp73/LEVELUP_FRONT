@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
 
   /* TEMPORARY SWITCH BETWEEN HOME AND TEACHER DASHBOARD - change hook from 'true' to 'false' */
-  const [home, setHome] = useState(false);
+  const [home, setHome] = useState(true);
 
 
 

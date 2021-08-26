@@ -50,6 +50,7 @@
 
 #user-link {
     height: 50%;
+    cursor: pointer;
 }
 
 #user-box {
@@ -97,3 +98,8 @@
     margin-left: -40px;
 }
 
+.mui-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
