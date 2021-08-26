@@ -1,6 +1,6 @@
 .banner-wrapper {
     display: flex;
-    background-image: url('../../../img/hero-img.png');
+    background-image: url('../../../img/home/hero-img.png');
     width: 100%;
     min-height: 400px;
     background-size: cover;

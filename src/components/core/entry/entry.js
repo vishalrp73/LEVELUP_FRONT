@@ -1,5 +1,5 @@
 import './entry.css';
-import entry_photo from '../../../img/student-photo.png';
+import entry_photo from '../../../img/home/student-photo.png';
 
 const Entry = () => {
     return (

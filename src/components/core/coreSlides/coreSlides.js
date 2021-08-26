@@ -1,15 +1,15 @@
 import './coreSlides.css';
 import { useState } from 'react';
 
-import frame from '../../../img/frame.png';
-import games from '../../../img/joystick.png';
-import chatbots from '../../../img/robot.png';
-import aug_reality from '../../../img/aug-reality.png';
+import frame from '../../../img/home/frame.png';
+import games from '../../../img/home/joystick.png';
+import chatbots from '../../../img/home/robot.png';
+import aug_reality from '../../../img/home/aug-reality.png';
 
-import proj_1 from '../../../img/project-1.png';
-import proj_2 from '../../../img/project-2.png';
-import proj_3 from '../../../img/project-3.png';
-import proj_4 from '../../../img/project-4.png';
+import proj_1 from '../../../img/home/project-1.png';
+import proj_2 from '../../../img/home/project-2.png';
+import proj_3 from '../../../img/home/project-3.png';
+import proj_4 from '../../../img/home/project-4.png';
 
 const CoreSlides = () => {
 

@@ -1,5 +1,5 @@
-import Header from '../components/head-foot/header';
-import Footer from '../components/head-foot/footer';
+import Header from '../components/head-foot/homeHeadFoot/header';
+import Footer from '../components/head-foot/homeHeadFoot/footer';
 import CoreBanner from '../components/core/coreBanner/coreBanner';
 import CoreSlides from '../components/core/coreSlides/coreSlides';
 import CorePanel from '../components/core/corePanel/corePanel';

@@ -1,11 +1,11 @@
 import './header-footer.css';
 
-import Logo from '../../img/logo.png';
-import NZ_Flag from '../../img/nz-flag.png';
-import Maori_Flag from '../../img/maori-flag.png';
+import logo from '../../../img/home/logo.png';
+import NZ_Flag from '../../../img/home/nz-flag.png';
+import Maori_Flag from '../../../img/home/maori-flag.png';
 
 import Modal from '@material-ui/core/Modal';
-import LogSign from '../logSign/logSign';
+import LogSign from '../../logSign/logSign';
 import { useState } from 'react';
 
 
@@ -31,7 +31,7 @@ const Header = () => {
 
     return (
         <div className = 'home-header-wrapper'>
-            <img id = 'home-logo' src = { Logo } />
+            <img id = 'home-logo' src = { logo } />
 
             <div className = 'links-wrap'>
                 <h3 id = 'links-text'>HOME</h3>

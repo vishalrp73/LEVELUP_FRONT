@@ -29,19 +29,19 @@
 }
 
 #create {
-    background-image: url('../../../img/child-sitting.png');
+    background-image: url('../../../img/home/child-sitting.png');
 }
 
 #critical {
-    background-image: url('../../../img/jigsaw.png');
+    background-image: url('../../../img/home/jigsaw.png');
 }
 
 #communication {
-    background-image: url('../../../img/kids-playing.png');
+    background-image: url('../../../img/home/kids-playing.png');
 }
 
 #technology {
-    background-image: url('../../../img/annie-pratt.png');
+    background-image: url('../../../img/home/annie-pratt.png');
 }
 
 .inner-img {

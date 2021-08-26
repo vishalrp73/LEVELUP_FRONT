@@ -1,9 +1,9 @@
 import './corePanel.css';
 
-import creative from '../../../img/idea.png';
-import brain from '../../../img/brain.png';
-import hands from '../../../img/team.png';
-import atom from '../../../img/atom.png';
+import creative from '../../../img/home/idea.png';
+import brain from '../../../img/home/brain.png';
+import hands from '../../../img/home/team.png';
+import atom from '../../../img/home/atom.png';
 
 const CorePanel = () => {
     return (
