@@ -6,6 +6,7 @@ const ProgressTracker = () => {
     const [users, setUsers] = useState([]);
     const [projects, setProjects] = useState([]);
     const [progHist, setProgHist] = useState([]);
+    const [userId, setUserId] = useState(0)
     let totalProj = projects.length;
 
     useEffect(() => {
@@ -25,6 +26,11 @@ const ProgressTracker = () => {
         .then (json => setProgHist(json))
         .catch (err => console.log(err));
 
+    }, [])
+
+    useEffect(() => {
+        const savedID = localStorage.getItem("user_id")
+        console.log(savedID)
     }, [])
 
     const banks = (user_id) => {

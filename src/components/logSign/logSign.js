@@ -13,6 +13,7 @@ const LogSign = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confPass, setConfPass] = useState('');
+    const [user, setUser] = useState({});
 
     useEffect(() => {
         setLog(props.log)
@@ -30,21 +31,26 @@ const LogSign = (props) => {
         .catch (err => console.log(err))
     }
 
+    useEffect(() => {
+        console.log(user)
+    }, [user])
+
     const handleLogin = () => {
         axios.post('http://localhost:4000/login', {
             email: email,
             password: password
         })
         .then (response => {
-            console.log(response.data)
+            setUser(response.data[0])
+            localStorage.setItem("user_id", user.user_id)
         })
         .catch (err => console.log(err))
     }
     
     const handleClick = (value) => {
-        if (value == 'login-switch') {
+        if (value == 'login-text') {
             setLog(true)
-        } else if (value == 'signup-switch') {
+        } else if (value == 'signup-text') {
             setLog(false)
         }
     }
@@ -59,8 +65,8 @@ const LogSign = (props) => {
                     <h2 className = 'reg-title'>Students</h2>
 
                     <div className = 'reg-switch-btn'>
-                        <h4 onClick = {(e) => handleClick(e.target.id)} id = 'login-switch' className = 'login-text'>LOG IN</h4>
-                        <h4 onClick = {(e) => handleClick(e.target.id)} id = 'signup-switch' className = 'signup-text'>SIGN UP</h4>
+                        <h4 onClick = {(e) => handleClick(e.target.className)} id = 'sign-login-switch' className = 'login-text'>LOG IN</h4>
+                        <h4 onClick = {(e) => handleClick(e.target.className)} id = 'sign-signup-switch' className = 'signup-text'>SIGN UP</h4>
                     </div>
 
                     <div className = 'input-wrapper' >
@@ -80,8 +86,8 @@ const LogSign = (props) => {
                     <h2 className = 'reg-title'>Teachers</h2>
 
                     <div className = 'reg-switch-btn'>
-                        <h4 onClick = {(e) => handleClick(e.target.id)} id = 'login-switch' className = 'login-text'>LOG IN</h4>
-                        <h4 onClick = {(e) => handleClick(e.target.id)} id = 'signup-switch' className = 'signup-text'>SIGN UP</h4>
+                        <h4 onClick = {(e) => handleClick(e.target.className)} id = 'sign-login-switch' className = 'login-text'>LOG IN</h4>
+                        <h4 onClick = {(e) => handleClick(e.target.className)} id = 'sign-signup-switch' className = 'signup-text'>SIGN UP</h4>
                     </div>
 
                     <div className = 'input-wrapper'>
@@ -111,8 +117,8 @@ const LogSign = (props) => {
                     <h2 className = 'reg-title'>Students</h2>
 
                     <div className = 'reg-switch-btn'>
-                        <h4 onClick = {(e) => handleClick(e.target.id)} id = 'login-switch' className = 'login-text'>LOG IN</h4>
-                        <h4 onClick = {(e) => handleClick(e.target.id)} id = 'signup-switch' className = 'signup-text'>SIGN UP</h4>
+                        <h4 onClick = {(e) => handleClick(e.target.className)} id = 'log-login-switch' className = 'login-text'>LOG IN</h4>
+                        <h4 onClick = {(e) => handleClick(e.target.className)} id = 'log-signup-switch' className = 'signup-text'>SIGN UP</h4>
                     </div>
 
                     <div className = 'input-wrapper'>
@@ -130,8 +136,8 @@ const LogSign = (props) => {
                     <h2 className = 'reg-title'>Teachers</h2>
 
                     <div className = 'reg-switch-btn'>
-                        <h4 onClick = {(e) => handleClick(e.target.id)} id = 'login-switch' className = 'login-text'>LOG IN</h4>
-                        <h4 onClick = {(e) => handleClick(e.target.id)} id = 'signup-switch' className = 'signup-text'>SIGN UP</h4>
+                        <h4 onClick = {(e) => handleClick(e.target.className)} id = 'log-login-switch' className = 'login-text'>LOG IN</h4>
+                        <h4 onClick = {(e) => handleClick(e.target.className)} id = 'log-signup-switch' className = 'signup-text'>SIGN UP</h4>
                     </div>
 
                     <div className = 'input-wrapper'>

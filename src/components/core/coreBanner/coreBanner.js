@@ -1,6 +1,20 @@
 import './coreBanner.css';
+import { useState } from 'react';
+import { Modal } from '@material-ui/core';
+import LogSign from '../../logSign/logSign';
 
 const CoreBanner = () => {
+
+    const [open, setOpen] = useState(false);
+
+    const handleClick = () => {
+        if (open) {
+            setOpen(false)
+        } else if (!open) {
+            setOpen(true)
+        }
+    }
+
     return (
         <>
             <div className = 'banner-wrapper'>
@@ -12,7 +26,7 @@ const CoreBanner = () => {
 
                     <div id = 'button-wrap' >
                         <div id = 'sign-wrap' >
-                            <input className = 'buttons' id = 'sign_up' type = 'button' value = 'SIGN UP' />
+                            <input className = 'buttons' id = 'sign_up' type = 'button' value = 'SIGN UP' onClick = {() => handleClick()}/>
                             <p id = 'sign-text'>*Basic subscription includes the first 15 projects
                                 free of charge.</p>
                         </div>
@@ -20,6 +34,10 @@ const CoreBanner = () => {
  
                     </div>
                 </div>
+
+                <Modal className = 'mui-modal' open = {open} onClose = {() => handleClick()}>
+                    <LogSign log = {false}/>
+                </Modal>
             </div>
         </>
 
