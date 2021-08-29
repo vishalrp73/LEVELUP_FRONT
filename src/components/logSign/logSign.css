@@ -45,3 +45,7 @@
 .input-fields {
     width: 200px;
 }
+
+.sign-btn, .login-btn {
+    width: 200px;
+}

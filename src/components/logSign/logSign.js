@@ -1,6 +1,7 @@
 import './logSign.css';
 
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import stud_photo from '../../img/logSignModal/reg-stud-photo.png';
 import teach_photo from '../../img/logSignModal/reg-teach-photo.png';
@@ -17,6 +18,36 @@ const LogSign = (props) => {
         setLog(props.log)
     }, [props])
 
+    const handleSignUp = () => {
+        axios.post('http://localhost:4000/signup', {
+            "email": email,
+            "password": password
+        })
+        .then (response => {
+            console.log(response.status)
+            console.log('Successful user sign up')
+        })
+        .catch (err => console.log(err))
+    }
+
+    const handleLogin = () => {
+        axios.post('http://localhost:4000/login', {
+            email: email,
+            password: password
+        })
+        .then (response => {
+            console.log(response.data)
+        })
+        .catch (err => console.log(err))
+    }
+    
+    const handleClick = (value) => {
+        if (value == 'login-switch') {
+            setLog(true)
+        } else if (value == 'signup-switch') {
+            setLog(false)
+        }
+    }
 
     const signup = () => {
         return (
@@ -108,34 +139,12 @@ const LogSign = (props) => {
                         <input type = 'password' placeholder = 'Password' className = 'input-fields' onChange = {(e) => setPassword(e.target.value)} />
                     </div>
 
-                    <input type = 'button' className = 'login-btn' value = 'LOGIN' onClick = {() => handleLogIn() } />
+                    <input type = 'button' className = 'login-btn' value = 'LOGIN' onClick = {() => handleLogin() } />
 
                 </div>
 
             </div>
         )
-    }
-
-    const handleClick = (value) => {
-        if (value == 'login-switch') {
-            setLog(true)
-        } else if (value == 'signup-switch') {
-            setLog(false)
-        }
-    }
-
-    const handleSignUp = () => {
-        console.log(fullName)
-        console.log(email)
-        console.log(password)
-        console.log(confPass)
-    }
-
-    const handleLogIn = () => {
-        console.log(fullName)
-        console.log(email)
-        console.log(password)
-        console.log(confPass)
     }
 
     return (
