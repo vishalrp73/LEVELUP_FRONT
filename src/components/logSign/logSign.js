@@ -14,6 +14,7 @@ const LogSign = (props) => {
     const [password, setPassword] = useState('');
     const [confPass, setConfPass] = useState('');
     const [user, setUser] = useState({});
+    const [id, setId] = useState(0);
 
     useEffect(() => {
         setLog(props.log)
@@ -31,18 +32,25 @@ const LogSign = (props) => {
         .catch (err => console.log(err))
     }
 
-    useEffect(() => {
-        console.log(user)
-    }, [user])
-
     const handleLogin = () => {
         axios.post('http://localhost:4000/login', {
             email: email,
             password: password
         })
         .then (response => {
-            setUser(response.data[0])
-            localStorage.setItem("user_id", user.user_id)
+
+            localStorage.setItem('user_id', response.data[0].user_id)
+            localStorage.setItem('name', response.data[0].first_name)
+            localStorage.setItem('role', response.data[0].role)
+
+
+            let userID = localStorage.getItem('user_id')
+            let fName = localStorage.getItem('name')
+            let role = localStorage.getItem('role')
+
+            if (userID == 18 && role == 'student') {
+                console.log('fuck you vishal')
+            }
         })
         .catch (err => console.log(err))
     }
@@ -126,7 +134,7 @@ const LogSign = (props) => {
                         <input type = 'password' placeholder = 'Password' className = 'input-fields' onChange = {(e) => setPassword(e.target.value)} />
                     </div>
 
-                    <input type = 'button' className = 'login-btn' value = 'LOGIN' />
+                    <input type = 'button' className = 'login-btn' value = 'LOGIN' onClick = {() => handleLogin() } />
 
                 </div>
 
