@@ -2,7 +2,7 @@ import './dashboard.css';
 
 import clsx from 'clsx';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import ProgressTracker from '../../pages/teacherDashPages/progTrack';
 import StudentProfiles from '../../pages/teacherDashPages/studProf';
@@ -26,6 +26,7 @@ const Dashboard = () => {
 
     const [open, setOpen] = useState(true);
     const [large, setLarge] = useState(false);
+    const [pic, setPic] = useState("");
 
     const handleDrawerOpen = () => {
         setOpen(true)
@@ -36,6 +37,11 @@ const Dashboard = () => {
         setOpen(false)
         setLarge(true)
     }
+
+    useEffect(() => {
+        let temp = localStorage.getItem('pic');
+        setPic(temp)
+    }, [])
 
     return (
         <div className = 'dashboard-wrapper'>
@@ -49,7 +55,7 @@ const Dashboard = () => {
                 })} >
 
                     <div id = 'teacher-photo-wrap'>
-                        <img id = 'teacher-photo' src = { teach_img } />
+                        <img id = 'teacher-photo' src = { pic } />
                     </div>
 
                     <div className = 'nav-wrapper'>

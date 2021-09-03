@@ -6,13 +6,14 @@ import Maori_Flag from '../../../img/home/maori-flag.png';
 
 import Modal from '@material-ui/core/Modal';
 import LogSign from '../../logSign/logSign';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 const Header = () => {
 
     const [open, setOpen] = useState(false);
     const [log, setLog] = useState(false);
+    const [img, setImg] = useState('');
 
     const handleClick = (id) => {
         console.log(id)
@@ -28,6 +29,8 @@ const Header = () => {
             setLog(true)
         }
     }
+
+    
 
     return (
         <div className = 'home-header-wrapper'>
@@ -49,7 +52,7 @@ const Header = () => {
 
                 <a id = 'user-link' >
                     <div id = 'user-box'>
-                        <div id = 'temp' />
+                        <div id = 'temp' style = {{backgroundImage: `url(${img})`}} />
                         <p id = 'register' className = 'user-text' onClick = {(event) => handleClick(event.target.id)}>REGISTER | </p>
                         <p id = 'login' className = 'user-text' onClick = {(event) => handleClick(event.target.id)}>LOGIN</p>
                     </div>

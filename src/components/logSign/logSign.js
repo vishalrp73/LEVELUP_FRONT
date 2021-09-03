@@ -2,6 +2,8 @@ import './logSign.css';
 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
+import * as ROUTES from '../../constants/routes';
 
 import stud_photo from '../../img/logSignModal/reg-stud-photo.png';
 import teach_photo from '../../img/logSignModal/reg-teach-photo.png';
@@ -13,8 +15,8 @@ const LogSign = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confPass, setConfPass] = useState('');
-    const [user, setUser] = useState({});
-    const [id, setId] = useState(0);
+
+    const history = useHistory();
 
     useEffect(() => {
         setLog(props.log)
@@ -42,15 +44,16 @@ const LogSign = (props) => {
             localStorage.setItem('user_id', response.data[0].user_id)
             localStorage.setItem('name', response.data[0].first_name)
             localStorage.setItem('role', response.data[0].role)
+            localStorage.setItem('pic', response.data[0].profile_pic)
 
 
             let userID = localStorage.getItem('user_id')
             let fName = localStorage.getItem('name')
             let role = localStorage.getItem('role')
-
-            if (userID == 18 && role == 'student') {
-                console.log('fuck you vishal')
-            }
+            let pic = localStorage.getItem('pic')
+        })
+        .then (() => {
+            history.push(ROUTES.TEACH_DASH)
         })
         .catch (err => console.log(err))
     }
