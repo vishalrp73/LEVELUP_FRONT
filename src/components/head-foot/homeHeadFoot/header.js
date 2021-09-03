@@ -16,7 +16,7 @@ const Header = () => {
     const [img, setImg] = useState('');
 
     const handleClick = (id) => {
-        console.log(id)
+
         if (open == true) {
             setOpen(false)
         } else if (open == false) {

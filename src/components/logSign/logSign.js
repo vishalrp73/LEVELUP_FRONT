@@ -46,15 +46,8 @@ const LogSign = (props) => {
             localStorage.setItem('role', response.data[0].role)
             localStorage.setItem('pic', response.data[0].profile_pic)
 
-
-            let userID = localStorage.getItem('user_id')
-            let fName = localStorage.getItem('name')
-            let role = localStorage.getItem('role')
-            let pic = localStorage.getItem('pic')
         })
-        .then (() => {
-            history.push(ROUTES.TEACH_DASH)
-        })
+        .then (history.push(ROUTES.TEACH_DASH))
         .catch (err => console.log(err))
     }
     
@@ -137,7 +130,7 @@ const LogSign = (props) => {
                         <input type = 'password' placeholder = 'Password' className = 'input-fields' onChange = {(e) => setPassword(e.target.value)} />
                     </div>
 
-                    <input type = 'button' className = 'login-btn' value = 'LOGIN' onClick = {() => handleLogin() } />
+                    <input type = 'button' className = 'login-btn' value = 'LOGIN' onClick = {handleLogin } />
 
                 </div>
 
@@ -156,7 +149,7 @@ const LogSign = (props) => {
                         <input type = 'password' placeholder = 'Password' className = 'input-fields' onChange = {(e) => setPassword(e.target.value)} />
                     </div>
 
-                    <input type = 'button' className = 'login-btn' value = 'LOGIN' onClick = {() => handleLogin() } />
+                    <input type = 'button' className = 'login-btn' value = 'LOGIN' onClick = {handleLogin } />
 
                 </div>
 

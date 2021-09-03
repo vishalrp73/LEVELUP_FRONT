@@ -6,6 +6,7 @@ import TeacherDashboard from './pages/teacherDash';
 import * as ROUTES from './constants/routes';
 import Authenticate from './hooks/useAuthorise';
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function App() {
 
