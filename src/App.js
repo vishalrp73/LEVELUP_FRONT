@@ -11,6 +11,8 @@ function App() {
 
   const { user } = Authenticate();
 
+  /* IF YOU WANT TO LOG OUT: Go to Browser -> F12 (Dev Tools) -> Application -> Local Storage -> localhost:3000 -> DELETE ALL KEY + VALUE PAIRS */
+
   return (
     <div className="App">
 
