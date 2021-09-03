@@ -5,8 +5,7 @@ import Home from './pages/home';
 import TeacherDashboard from './pages/teacherDash';
 import * as ROUTES from './constants/routes';
 import Authenticate from './hooks/useAuthorise';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import ProjectLibrary from './pages/projLibrary';
 
 function App() {
 
@@ -26,8 +25,7 @@ function App() {
             <Home />
           </IsUserRedirect>
 
-          
-
+        
 
         </Switch>
       </Router>
