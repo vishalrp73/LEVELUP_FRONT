@@ -7,6 +7,8 @@ import * as ROUTES from './constants/routes';
 import Authenticate from './hooks/useAuthorise';
 import ProjectLibrary from './pages/projLibrary';
 
+
+
 function App() {
 
   const { user } = Authenticate();
@@ -16,7 +18,9 @@ function App() {
   return (
     <div className="App">
 
-      <Router>
+      <ProjectLibrary />
+
+      {/* <Router>
         <Switch>
           
           <ProtectedRoute  user = {user} path = {ROUTES.TEACH_DASH} >
@@ -30,7 +34,7 @@ function App() {
         
 
         </Switch>
-      </Router>
+      </Router> */}
     </div>
   );
 }

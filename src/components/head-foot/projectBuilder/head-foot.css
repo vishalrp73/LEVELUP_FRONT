@@ -1,0 +1,94 @@
+/* HEADER COMPONENT CSS */
+
+
+.header-wrapper {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+#logo-wrapper {
+    float: left;
+    width: 15%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+#logo {
+    width: 50%;
+    height: 100%;
+}
+
+.submenu-wrapper {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto 0 auto auto;
+}
+
+.sub-links {
+    width: 25%;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto 10px;
+    height: 50%;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.sub-links:hover {
+    opacity: 0.8;
+}
+
+.sub-text {
+    margin: auto;
+}
+
+#takeSC {
+    background-color: #E5AB2C;
+}
+
+#helpC {
+    background-color: #F91C85;
+}
+
+#morePr {
+    background-color: #43C0F6;
+}
+
+#flag-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0% 10% auto 0%;
+    width: 60px;
+}
+
+#nz-flag, #maori-flag {
+    margin: 10% 0% auto 10px;
+    width: 24px;
+    height: 12px;
+}
+
+#maori-flag {
+    margin-left: 10px;
+}
+
+#lang-text {
+    font-size: 8px;
+    color: #FFFFFF;
+}
+
+/* FOOTER COMPONENT CSS */
+
+.footer-wrapper {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
