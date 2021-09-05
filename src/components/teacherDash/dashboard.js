@@ -22,11 +22,15 @@ import user_icon from '../../img/teachDash/user_icon.png';
 import set_icon from '../../img/teachDash/settings_icon.png';
 import log_icon from '../../img/teachDash/logout_icon.png';
 
+import * as ROUTES from '../../constants/routes';
+import { useHistory } from 'react-router';
+
 const Dashboard = () => {
 
     const [open, setOpen] = useState(true);
     const [large, setLarge] = useState(false);
     const [pic, setPic] = useState("");
+    const history = useHistory();
 
     const handleDrawerOpen = () => {
         setOpen(true)
@@ -36,6 +40,16 @@ const Dashboard = () => {
     const handleDrawerClose = () => {
         setOpen(false)
         setLarge(true)
+    }
+
+    const handleLogOut = () => {
+        localStorage.removeItem('user_id')
+        localStorage.removeItem('pic')
+        localStorage.removeItem('role')
+        localStorage.removeItem('name')
+
+        history.push(ROUTES.HOME)
+
     }
 
     useEffect(() => {
@@ -168,7 +182,7 @@ const Dashboard = () => {
                                 })} >Settings</p>
                             </a>
 
-                            <a href = '#' className = 'bottom-links'>
+                            <a onClick = {() => handleLogOut()} className = 'bottom-links'>
                                 <img className = 'bottom-img' src = { log_icon } />
                                 <p className = {clsx('bottom-text', {
                                             ['hidden']: !large,
