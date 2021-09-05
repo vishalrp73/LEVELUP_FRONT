@@ -34,6 +34,11 @@ const TeacherProjectDashboard = (props) => {
     const [open, setOpen] = useState(true)
     const [large, setLarge] = useState(false)
     const [pic, setPic] = useState("")
+    const [project, setProject] = useState(props.project)
+
+    useEffect(() => {
+        setProject(props.project)
+    }, [props])
 
     const handleDrawerOpen = () => {
         setOpen(true)
@@ -213,31 +218,31 @@ const TeacherProjectDashboard = (props) => {
                             <Switch>
 
                                 <Route exact path = '/learnObj.js' >
-                                    <LearningObjective />
+                                    <LearningObjective project = {project} />
                                 </Route>
 
                                 <Route exact path = '/instructions.js' >
-                                    <Instructions />
+                                    <Instructions project = {project} />
                                 </Route>
 
                                 <Route exact path = '/videoTut.js' >
-                                    <VideoTutorial />
+                                    <VideoTutorial project = {project} />
                                 </Route>
 
                                 <Route exact path = '/previewProj.js' >
-                                    <PreviewProject />
+                                    <PreviewProject project = {project} />
                                 </Route>
 
                                 <Route exact path = '/checkSub.js' >
-                                    <CheckSubmissions />
+                                    <CheckSubmissions project = {project} />
                                 </Route>
 
                                 <Route exact path = '/offAct.js' >
-                                    <OfflineActivities />
+                                    <OfflineActivities project = {project} />
                                 </Route>
 
                                 <Route exact path = '/quizRes.js' >
-                                    <QuizResults />
+                                    <QuizResults project = {project} />
                                 </Route>
 
 

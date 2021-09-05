@@ -4,7 +4,7 @@ const VideoTutorial = () => {
 
     return (
         <>
-            <p>Video Tutorial</p>
+            <p>Placeholder for Video Tutorial</p>
         </>
     )
 }

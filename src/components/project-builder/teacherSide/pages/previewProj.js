@@ -1,10 +1,18 @@
 import '../pageCSS/previewProj.css';
 
-const PreviewProject = () => {
+import { useState, useEffect } from 'react';
+
+const PreviewProject = (props) => {
+
+    const [project, setProject] = useState(props.project)
+
+    useEffect(() => {
+        setProject(props.project)
+    }, [props])
 
     return (
         <>
-            <p>Preview Project</p>
+            <img src = {project.preview} />
         </>
     )
 }

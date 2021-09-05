@@ -4,7 +4,7 @@ const Instructions = () => {
 
     return (
         <>
-            <p>Instructions</p>
+            <p>Placeholder for project instructions</p>
         </>
     )
 }

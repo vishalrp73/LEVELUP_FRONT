@@ -17,6 +17,8 @@ const Stepper = (props) => {
         .then (json => setProjectList(json))
         .catch (err => console.log(err))
 
+        /* COMMENTED OUT FOR NOW BECAUSE CAUSES 'UNDEFINED' ERROR */
+
         /* let x = document.getElementById(project.project_id)
         x.style.backgroundColor = '#FDF7C0'
         x.style.border = '3px solid #43C0F6'
