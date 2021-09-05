@@ -17,12 +17,12 @@ const Stepper = (props) => {
         .then (json => setProjectList(json))
         .catch (err => console.log(err))
 
-        let x = document.getElementById(project.project_id)
+        /* let x = document.getElementById(project.project_id)
         x.style.backgroundColor = '#FDF7C0'
         x.style.border = '3px solid #43C0F6'
         x.style.height = '40px'
         x.style.width = '40px'
-        x.style.fontSize = '24px'
+        x.style.fontSize = '24px' */
 
 
     }, [props])
