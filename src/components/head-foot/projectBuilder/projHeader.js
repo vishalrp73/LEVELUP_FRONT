@@ -1,16 +1,30 @@
-import './head-foot.css';
+import './projHead-foot.css';
 
 import logo from '../../../img/teachDash/logo.png';
 import nz_flag from '../../../img/teachDash/nz_flag.png';
 import maori_flag from '../../../img/teachDash/maori_flag.png';
 
-const Header = () => {
+import Stepper from '../../project-builder/header-stepper/stepper';
+
+import { useState, useEffect } from 'react';
+
+const Header = (props) => {
+
+    const [project, setProject] = useState({});
+
+    useEffect(() => {
+        setProject(props.project)
+    }, [props])
+
+
     return (
         <div className = 'header-wrapper'>
 
             <div id = 'logo-wrapper'>
                 <img id = 'logo' src = { logo } />
             </div>
+
+            <Stepper project = {project} />
 
             <div className = 'submenu-wrapper'>
 

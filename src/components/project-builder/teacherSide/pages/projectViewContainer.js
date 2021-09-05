@@ -1,14 +1,22 @@
-import '../pageCSS/projectViewContainer.css';
-
 import Header from '../../../../components/head-foot/projectBuilder/projHeader';
 import TeacherProjectDashboard from '../teachProjBuilder';
 import Footer from '../../../../components/head-foot/projectBuilder/projFooter';
 
-const ProjectViewerContainer = () => {
+import { useState, useEffect } from 'react';
+
+const ProjectViewerContainer = (props) => {
+
+    const [project, setProject] = useState({})
+
+    useEffect(() => {
+        setProject(props.project)
+    }, [props])
+
+
     return (
         <>
-            <Header />
-            <TeacherProjectDashboard />
+            <Header project = {project} />
+            <TeacherProjectDashboard project = {project} />
             <Footer />
         </>
     )

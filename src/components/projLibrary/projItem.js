@@ -21,15 +21,17 @@ const ProjectItem = (props) => {
     return (
         <div>
 
-            <div className = 'item-wrapper' id = {props.project.project_id} onClick = {() => handleClick()}>
+            <div className = 'item-wrapper' id = {`box ${props.project.project_id}`} onClick = {() => handleClick()}>
                 <img className = 'proj-img' src = {props.project.preview} />
                 <h5 className = 'proj-name'>{props.project.project_name}</h5>
                 <p className = 'proj-det'>{props.project.project_id} | {props.project.course} | {props.project.activity_type}</p>
             </div>
 
             <Modal className = 'project-modal' open = {open} onClose = {() => handleClose()} >
-
-                <ProjectViewerContainer />
+                <>
+                    <p style={{position:'fixed'}} onClick = {() => handleClose()} >X</p>
+                    <ProjectViewerContainer project = {props.project} />
+                </>
 
             </Modal>
 

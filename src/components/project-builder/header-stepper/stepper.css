@@ -1,0 +1,45 @@
+.stepper-wrapper {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.stepper-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepper-title-text {
+    font-size: 20px;
+    margin: 0;
+}
+
+.stepper-project-name {
+    font-size: 10px;
+    margin: 0;
+}
+
+.project-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-circle {
+    border-radius: 50px;
+    border: 3px solid #43C0F6;
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
