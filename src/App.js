@@ -18,9 +18,7 @@ function App() {
   return (
     <div className="App">
 
-      <ProjectLibrary />
-
-      {/* <Router>
+      <Router>
         <Switch>
           
           <ProtectedRoute  user = {user} path = {ROUTES.TEACH_DASH} >
@@ -34,7 +32,7 @@ function App() {
         
 
         </Switch>
-      </Router> */}
+      </Router>
     </div>
   );
 }

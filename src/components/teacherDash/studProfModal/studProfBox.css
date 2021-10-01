@@ -1,0 +1,144 @@
+.student-profile-box {
+    width: 20%;
+    background-color: #FFFFFF;
+    margin: 2.5%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#stud-prof-photo {
+    width: 25%;
+    height: 50%;
+    margin: 5% auto;
+    border-radius: 50px;
+}
+
+#stud-prof-text {
+    text-align: center;
+    color: #707070;
+}
+
+/* MODAL CSS */
+
+.stud-prof-modal-core {
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-modal {
+    cursor: pointer;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    color: white;
+    border-radius: 50%;
+}
+
+.close-modal:hover {
+    filter: brightness(1.5);
+}
+
+.close-modal:active {
+    filter: brightness(0.5);
+}
+
+.exit-modal-btn {
+    background-color: #F91C85;
+    min-width: 200px;
+    height: 35px;
+    margin: 0px 20% auto auto;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.stud-prof-core-wrapper {
+    width: 75%;
+    height: fit-content;
+    display: flex;
+    margin: 50px auto;
+}
+
+/* LEFT PORTION (IMAGE BOX) */
+
+.stud-prof-image-box {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.stud-img {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.img-box-btn {
+    width: 200px;
+    height: 35px;
+    margin: 20px auto;
+    border: 1px solid #43C0F6;
+    color: #43C0F6;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+/* RIGHT PORTION (DETAIL BOX) */
+
+.stud-prof-detail-box {
+    width: 60%;
+    background-color: white;
+    margin-left: 75px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stud-name {
+    text-align: center;
+    color: #707070;
+    margin: 20px auto 20px auto;
+}
+
+.detail-distro {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto auto auto;
+    width: 100%;
+}
+
+.detail-row-wrap {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 10px 0px;
+}
+
+.detail-key {
+    margin: auto auto auto 10px;
+    width: 50%;
+    color: #A5A5A5;
+}
+
+.detail-value {
+    margin: auto 10px auto auto;
+    width: 50%;
+    color: #707070;
+}

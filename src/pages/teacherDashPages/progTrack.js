@@ -51,7 +51,12 @@ const ProgressTracker = () => {
                     let colour = document.getElementById((user_id) + "-" + (proj_id));
                     /* IF ERROR: Delete line below, save, refresh page, add line back in and save */
                     /* MIGHT BE BECAUSE USEEFFECT HOOK */
-                    colour.style.backgroundColor = '#99EDCC';
+                    try {
+                        colour.style.backgroundColor = '#99EDCC';
+                    } catch (error) {
+                        console.log(error)
+                    }
+                    
                 }
             }
         }

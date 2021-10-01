@@ -4,27 +4,6 @@
     flex-wrap: wrap;
 }
 
-.student-profile-box {
-    width: 20%;
-    background-color: #FFFFFF;
-    margin: 2.5%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-#stud-prof-photo {
-    width: 25%;
-    height: 50%;
-    margin: 5% auto;
-    border-radius: 50px;
-}
-
-#stud-prof-text {
-    text-align: center;
-    color: #707070;
-}
-
 .links {
     width: 20%;
 }

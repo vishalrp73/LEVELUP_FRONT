@@ -2,7 +2,7 @@ import './logSign.css';
 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Redirect } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
 import stud_photo from '../../img/logSignModal/reg-stud-photo.png';
@@ -15,12 +15,17 @@ const LogSign = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confPass, setConfPass] = useState('');
+    const [loggedIn, setLoggedIn] = useState(false);
 
     const history = useHistory();
 
     useEffect(() => {
         setLog(props.log)
     }, [props])
+
+    const handleRefresh = () => {
+        window.location.reload(false)
+    }
 
     const handleSignUp = () => {
         axios.post('http://localhost:4000/signup', {
@@ -31,6 +36,8 @@ const LogSign = (props) => {
             console.log(response.status)
             console.log('Successful user sign up')
         })
+        .then (window.location.reload(false))
+        .then (alert('User signed up'))
         .catch (err => console.log(err))
     }
 
@@ -45,10 +52,11 @@ const LogSign = (props) => {
             localStorage.setItem('name', response.data[0].first_name)
             localStorage.setItem('role', response.data[0].role)
             localStorage.setItem('pic', response.data[0].profile_pic)
-
+            setLoggedIn(true);
         })
         .then (history.push(ROUTES.TEACH_DASH))
-        .catch (err => console.log(err))
+        .then (() => handleRefresh())
+        .catch (err => console.log(err));
     }
     
     const handleClick = (value) => {

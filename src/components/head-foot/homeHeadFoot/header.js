@@ -8,6 +8,8 @@ import Modal from '@material-ui/core/Modal';
 import LogSign from '../../logSign/logSign';
 import { useState, useEffect } from 'react';
 
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
 
 const Header = () => {
 
@@ -52,7 +54,7 @@ const Header = () => {
 
                 <a id = 'user-link' >
                     <div id = 'user-box'>
-                        <div id = 'temp' style = {{backgroundImage: `url(${img})`}} />
+                        <AccountCircleIcon />
                         <p id = 'register' className = 'user-text' onClick = {(event) => handleClick(event.target.id)}>REGISTER | </p>
                         <p id = 'login' className = 'user-text' onClick = {(event) => handleClick(event.target.id)}>LOGIN</p>
                     </div>

@@ -32,6 +32,10 @@ const Dashboard = () => {
     const [pic, setPic] = useState("");
     const history = useHistory();
 
+    const handleRefresh = () => {
+        window.location.reload(false);
+    }
+
     const handleDrawerOpen = () => {
         setOpen(true)
         setLarge(false)
@@ -49,7 +53,12 @@ const Dashboard = () => {
         localStorage.removeItem('name')
 
         history.push(ROUTES.HOME)
+        handleRefresh()
+    }
 
+    const handleProjLib = () => {
+        history.push(ROUTES.PROJ_LIBRARY)
+        handleRefresh();
     }
 
     useEffect(() => {

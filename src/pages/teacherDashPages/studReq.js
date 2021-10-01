@@ -30,6 +30,10 @@ const StudentRequests = () => {
         }
     }
 
+    const handleRefresh = () => {
+        window.location.reload(false);
+    }
+
     const handleMarkComp = () =>  {
         axios.post ('http://localhost:4000/remove', {
             checkedValues: collection
@@ -42,6 +46,8 @@ const StudentRequests = () => {
         .catch (() => {
             console.log('Unsuccessful marking')
         })
+
+        handleRefresh();
     }
 
 

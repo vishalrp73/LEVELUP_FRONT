@@ -44,6 +44,11 @@
 
 .login-text {
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.signup-text {
+    cursor: pointer;
 }
 
 #sign-login-switch {

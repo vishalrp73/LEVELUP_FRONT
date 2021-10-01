@@ -12,7 +12,7 @@
 }
 
 #mark-comp-link:hover {
-    color: orange;
+    cursor: pointer;
     text-decoration: underline;
 }
 

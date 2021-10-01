@@ -16,7 +16,9 @@
 }
 
 .info-btn {
-    margin: 10px 10%;
+    margin: 10px auto;
+    min-width: fit-content;
+    padding: 0px 10px;
 }
 
 .info-btn:active {

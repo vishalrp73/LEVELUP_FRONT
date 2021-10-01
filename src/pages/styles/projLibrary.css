@@ -1,6 +1,7 @@
 .projects-wrapper {
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .title-wrap {
@@ -28,4 +29,5 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
