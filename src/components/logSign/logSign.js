@@ -36,8 +36,6 @@ const LogSign = (props) => {
             console.log(response.status)
             console.log('Successful user sign up')
         })
-        .then (window.location.reload(false))
-        .then (alert('User signed up'))
         .catch (err => console.log(err))
     }
 

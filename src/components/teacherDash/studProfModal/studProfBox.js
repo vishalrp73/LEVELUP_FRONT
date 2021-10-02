@@ -114,7 +114,7 @@ const StudentProfileBox = (props) => {
 
                     </div>
 
-                    <input type = 'button' value = 'BACK TO PROJECTS'
+                    <input type = 'button' value = 'BACK TO PROFILES'
                             className = 'exit-modal-btn'
                             onClick  = {() => handleClose()} />
 
